@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  background-color: #1a1a1a;
+  color: #dcdcdc;
+  font-family: 'UnifrakturCook', serif;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111;
+  border-bottom: 1px solid #444;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  width: 150px;
+  height: 170px;
+}
+
+nav a {
+  color: #dcdcdc;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.shop-button {
+  background: none;
+  border: 1px solid #dcdcdc;
+  color: #dcdcdc;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.shop-button:hover {
+  background: #333;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.products img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #333;
+  background: #222;
+}
+
+@font-face {
+    font-family: "Pieces of Eight";
+    src: url(./Pieces\ of\ Eight.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{ font-family: "Pieces of Eight";
+    font-size: 50px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "evanescent";
+    src: url(./evanescent.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+h2{ font-family: "evanescent";
+    font-size: 70px;
+}
+
+@font-face {
+    font-family: "Ithornët";
+    src: url(./Estilo/Ithornët.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+h3{ font-family: "Ithornët";
+font-size: 70px;
+} 
+@font-face {
+    font-family: "GODOFWAR";
+    src: url(./GODOFWAR.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+h4{ font-family:"GODOFWAR" ;
+font-size: 70px;}
+
+
+
+img{
+  max-width: 500px;
+  
+}
+
+.carousel {
+  max-width: 800px; 
+  margin: auto;
+}
+
+.carousel-img {
+  height: 450px;      
+  object-fit: cover;   
+  border-radius: 10px; 
+}
+
+.carousel-item a {
+  display: block;
+  width: 100%;
+}
+.carousel-item img {
+  border: none;
+}
+
+h5{
+  text-align: center;
+}
+
+h6{
+  text-align: center;
+  text-decoration: line-through;
+}
+
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+/* TARJETA DEL PRODUCTO */
+.card {
+  width: 100%;
+  max-width: 250px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGEN UNIFORME */
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+}
+
+/* CUERPO DEL PRODUCTO */
+.card-body {
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.card-body h6 {
+  color: gray;
+  text-decoration: line-through;
+  margin: 5px 0;
+}
+
+.card-body h5 {
+  color: #c40000;
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+
+.parent2 {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+  height: 450px;
+ margin-top: 10px;
+  justify-content: center;
+  
+}
+
+.parent2 div {
+  overflow: hidden;       /* Oculta el exceso de imagen */
+  border-radius: 0px;
+}
+
+.parent2 img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;      /* Hace que todas las imágenes se recorten y llenen el contenedor */
+  display: block;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.parent2 img:hover {
+  transform: scale(1.1);
+}
+
+.footer-logo {
+  margin-top: 10px; /* o incluso 0 */
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
