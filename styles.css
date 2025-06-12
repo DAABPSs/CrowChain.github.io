@@ -244,3 +244,43 @@ h6{
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+}
+
+.img-resp {
+  width: 100%;
+  max-width: 400px; /* o el tamaño que prefieras para escritorio */
+  height: auto;
+}
+
+.logo {
+  font-size: 48px; /* tamaño para escritorio */
+  font-weight: bold;
+}
+
+/* Media query para celulares */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 28px;
+  }
+
+  .img-resp {
+    max-width: 100%; /* que se adapte completamente al ancho del contenedor */
+  }
+}
+
+.hero-img {
+  max-width: 400px; /* o el tamaño que quieras */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* centra horizontalmente */
+}
